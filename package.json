@@ -1,0 +1,17 @@
+{
+  "name": "instant-translate-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page for Instant Translate Windows app",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^8.0.2"
+  }
+}
