@@ -6,8 +6,8 @@
   <title>Instant Translate for Windows</title>
   <meta name="description" content="Dịch nhanh đoạn văn bản được chọn sang ngôn ngữ cố định để viết bình luận, chat và nội dung bằng ngôn ngữ khác dễ dàng hơn." />
   <meta name="theme-color" content="#0f172a" />
-  <link rel="icon" type="image/png" href="./assets/logo-128.png" />
-  <link rel="shortcut icon" type="image/png" href="./assets/logo-128.png" />
+  <link rel="icon" type="image/png" href="./assets/tray-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="./assets/tray-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
@@ -19,7 +19,7 @@
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Instant Translate">
-      <img src="assets/logo-128.png" alt="Instant Translate logo" />
+      <img src="assets/app-icon.png" alt="Instant Translate logo" />
       <span>Instant Translate</span>
     </a>
 
@@ -32,9 +32,17 @@
         <svg class="icon icon-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
         <span>Cách hoạt động</span>
       </a>
+      <a href="#screenshots">
+        <svg class="icon icon-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M8 10h8M8 14h5"/></svg>
+        <span>Giao diện</span>
+      </a>
       <a href="#faq">
         <svg class="icon icon-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.1 9a3 3 0 1 1 5.8 1c-.4.9-1.1 1.3-1.9 1.8-.8.5-1.5 1.1-1.5 2.2"/><path d="M12 17h.01"/></svg>
         <span>FAQ</span>
+      </a>
+      <a href="https://github.com/ocampoje17/instant-translate-win" target="_blank" rel="noreferrer">
+        <svg class="icon icon-xs icon-brand" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.5 0-.25-.01-1.07-.01-1.94-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .08 1.54 1.06 1.54 1.06.9 1.57 2.35 1.12 2.92.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.32 9.32 0 0 1 12 6.9c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.02 1.63 1.02 2.75 0 3.95-2.34 4.81-4.57 5.07.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+        <span>GitHub</span>
       </a>
     </nav>
 
@@ -52,6 +60,7 @@
         <p class="lead">
           App giúp bạn dịch nhanh đoạn văn bản đang chọn sang ngôn ngữ cố định bạn đã đặt sẵn.
           Rất tiện khi viết bình luận trên Reddit, Twitter, trả lời chat với người nước ngoài, hoặc đăng nội dung bằng ngôn ngữ khác từ tiếng chính bạn đang dùng (ví dụ Tiếng Việt).
+          Bạn có thể chọn Gemini hoặc OpenAI-compatible theo nhu cầu, giao diện cài đặt rất dễ hiểu cho người mới.
         </p>
 
         <div class="hero-actions">
@@ -62,38 +71,32 @@
         </div>
 
         <ul class="hero-meta">
-          <li>Native app cho Windows nên chạy rất nhẹ</li>
+          <li>Native app cho Windows, chạy nền rất nhẹ (chỉ khoảng ~50MB RAM)</li>
           <li>Hotkey mặc định: Ctrl + Shift + E</li>
-          <li>Dịch sang ngôn ngữ đích cố định theo cài đặt của bạn</li>
+          <li>Ngôn ngữ đích có card riêng, dễ chỉnh và dễ theo dõi</li>
         </ul>
       </div>
 
-      <div class="hero-mock reveal" data-delay="120">
-        <div class="window-topbar">
-          <span></span><span></span><span></span>
-          <p>Instant Translate</p>
-        </div>
-        <div class="window-body">
-          <aside>
-            <p>Dịch nhanh</p>
-            <p>Dịch thủ công</p>
-            <p>Lịch sử</p>
-            <p class="muted">Cài đặt</p>
-          </aside>
-          <article>
-            <div class="card">
-              <h3>Hotkey Triggered</h3>
-              <p class="muted">Nguồn</p>
-              <p class="text-sample">Bài này hay quá, cảm ơn bạn đã chia sẻ!</p>
-              <p class="muted">Bản dịch</p>
-              <p class="text-sample">This post is really helpful, thank you for sharing!</p>
-            </div>
-            <div class="status-line">
-              <span class="dot"></span>
-              <p>Sẵn sàng | Dịch xong có thể dán ngay để gửi</p>
-            </div>
-          </article>
-        </div>
+      <div class="hero-shot reveal" data-delay="120">
+        <img src="assets/screenshot-01.jpg" alt="Giao diện dịch nhanh của Instant Translate trên Windows" loading="lazy" />
+      </div>
+    </section>
+
+    <section id="screenshots" class="section screenshots">
+      <div class="section-head reveal">
+        <p class="eyebrow">GIAO DIỆN THỰC TẾ</p>
+        <h2>Xem trực tiếp app khi dùng hằng ngày</h2>
+      </div>
+
+      <div class="screenshots-grid">
+        <figure class="screenshot-card reveal">
+          <img src="assets/screenshot-01.jpg" alt="Màn hình dịch nhanh của Instant Translate" loading="lazy" />
+          <figcaption>Tab Dịch nhanh: xem nguồn, bản dịch và trạng thái ngay lập tức.</figcaption>
+        </figure>
+        <figure class="screenshot-card reveal" data-delay="90">
+          <img src="assets/screenshot-02.jpg" alt="Màn hình cài đặt API và mô hình dịch" loading="lazy" />
+          <figcaption>Tab Cài đặt: chọn provider, API key và model theo nhu cầu.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -115,22 +118,22 @@
           <div class="feature-icon">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h6"/></svg>
           </div>
-          <h3>Ngôn ngữ đích cố định</h3>
-          <p>Bạn cài một ngôn ngữ đích, sau đó app luôn dịch về đúng ngôn ngữ đó để dùng liền mạch.</p>
+          <h3>Card Ngôn ngữ đích riêng</h3>
+          <p>Phần chọn ngôn ngữ đích được tách riêng thành một card, dễ nhìn và dễ chỉnh hơn.</p>
         </article>
         <article class="feature-card reveal" data-delay="120">
           <div class="feature-icon">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17h10"/><path d="M8 7h8"/><path d="M6 12h12"/></svg>
           </div>
-          <h3>Rất tiện cho đời sống hàng ngày</h3>
-          <p>Dùng để viết bình luận mạng xã hội, trả lời chat, hoặc soạn nội dung ngắn bằng ngôn ngữ nước ngoài.</p>
+          <h3>Cài đặt theo provider, không rối</h3>
+          <p>Bạn chọn Gemini hay OpenAI-compatible thì app chỉ hiện đúng phần cài đặt đó, nhưng vẫn giữ nguyên dữ liệu provider còn lại.</p>
         </article>
         <article class="feature-card reveal">
           <div class="feature-icon">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L4 14h7l-1 7 10-13h-7z"/></svg>
           </div>
           <h3>Chạy nhẹ, mở nhanh</h3>
-          <p>Native app cho Windows nên hoạt động mượt và nhẹ, phù hợp để chạy nền lâu dài.</p>
+          <p>Native app cho Windows nên hoạt động mượt, khi chạy nền chỉ chiếm khoảng ~50MB RAM.</p>
         </article>
         <article class="feature-card reveal" data-delay="60">
           <div class="feature-icon">
@@ -143,8 +146,8 @@
           <div class="feature-icon">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7h-8a4 4 0 1 0 0 8h8"/><path d="M16 11l4-4-4-4"/><path d="M8 17H4"/></svg>
           </div>
-          <h3>Lưu dữ liệu trên máy</h3>
-          <p>Bản dịch và lịch sử được lưu hoàn toàn trên máy bạn, không gửi đến bất kỳ server nào khác.</p>
+          <h3>OpenAI-compatible linh hoạt</h3>
+          <p>Tắt base URL tuỳ chỉnh: app dùng mặc định OpenAI và yêu cầu API key. Bật base URL tuỳ chỉnh: API key chuyển thành tùy chọn.</p>
         </article>
       </div>
     </section>
@@ -152,8 +155,9 @@
     <section id="how" class="section split">
       <div class="split-copy reveal">
         <p class="eyebrow">CÁCH DÙNG</p>
-        <h2>3 bước để viết bình luận/chat bằng ngôn ngữ khác</h2>
+        <h2>4 bước để viết bình luận/chat bằng ngôn ngữ khác</h2>
         <ol>
+          <li>Vào Cài đặt và chọn provider bạn muốn dùng: Gemini hoặc OpenAI-compatible.</li>
           <li>Viết ý tưởng của bạn bằng ngôn ngữ chính (ví dụ: Tiếng Việt) rồi chọn đoạn text.</li>
           <li>Nhấn tổ hợp hotkey để dịch sang ngôn ngữ đích cố định đã cài.</li>
           <li>Dán bản dịch vào Reddit, Twitter, khung chat hoặc nơi bạn muốn đăng.</li>
@@ -199,7 +203,7 @@
             <svg class="icon icon-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.1 9a3 3 0 1 1 5.8 1c-.4.9-1.1 1.3-1.9 1.8-.8.5-1.5 1.1-1.5 2.2"/><path d="M12 17h.01"/></svg>
             <span>App có chạy khi đóng cửa sổ không?</span>
           </summary>
-          <p>Có. Bạn có thể bật tùy chọn chạy nền để app ẩn xuống system tray và tiếp tục lắng nghe hotkey.</p>
+          <p>Có. Bạn có thể bật tùy chọn chạy nền để app ẩn xuống system tray và tiếp tục lắng nghe hotkey, mức RAM thường chỉ khoảng ~50MB.</p>
         </details>
         <details class="reveal" data-delay="60">
           <summary>
@@ -214,6 +218,13 @@
             <span>Dữ liệu lịch sử được lưu ở đâu?</span>
           </summary>
           <p>Được lưu hoàn toàn trên máy bạn, không gửi đến bất kỳ server nào khác.</p>
+        </details>
+        <details class="reveal">
+          <summary>
+            <svg class="icon icon-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h6"/></svg>
+            <span>OpenAI-compatible dùng như thế nào cho dễ?</span>
+          </summary>
+          <p>Nếu bạn dùng OpenAI chính thức thì để tắt base URL tuỳ chỉnh và nhập API key. Nếu bạn dùng server riêng thì bật base URL tuỳ chỉnh, nhập URL của bạn, API key có thể để trống.</p>
         </details>
       </div>
     </section>
@@ -233,6 +244,10 @@
       <a href="https://t.me/namhnz" target="_blank" rel="noreferrer">
         <svg class="icon icon-xs" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 4.5L3.9 11.3l5.4 2.1 2.1 5.4z"/><path d="M9.3 13.4l9.2-8.9"/></svg>
         <span>@namhnz (Telegram)</span>
+      </a>
+      <a href="https://github.com/ocampoje17/instant-translate-win" target="_blank" rel="noreferrer">
+        <svg class="icon icon-xs icon-brand" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.5 0-.25-.01-1.07-.01-1.94-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .08 1.54 1.06 1.54 1.06.9 1.57 2.35 1.12 2.92.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.32 9.32 0 0 1 12 6.9c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.02 1.63 1.02 2.75 0 3.95-2.34 4.81-4.57 5.07.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.5A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+        <span>GitHub Repository</span>
       </a>
     </div>
   </footer>
