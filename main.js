@@ -1,9 +1,9 @@
 import "./styles.css";
-import lowRamUsageImage from "../screenshoot/low-ram-usage.jpg";
-import screenshot01Image from "../screenshoot/screenshot-01.jpg";
-import screenshot02Image from "../screenshoot/screenshot-02.jpg";
-import textTyperImage from "../screenshoot/text-typer.jpg";
-import trayChangeLanguageImage from "../screenshoot/tray-change-language.jpg";
+import lowRamUsageImage from "./assets/low-ram-usage.jpg";
+import screenshot01Image from "./assets/screenshot-01.jpg";
+import screenshot02Image from "./assets/screenshot-02.jpg";
+import textTyperImage from "./assets/text-typer.jpg";
+import trayChangeLanguageImage from "./assets/tray-change-language.jpg";
 
 const screenshotItems = [
   {
