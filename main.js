@@ -9,27 +9,27 @@ const screenshotItems = [
   {
     src: screenshot01Image,
     alt: "Giao dien chinh cua Instant Translate",
-    caption: "Giao dien chinh cua app."
+    caption: "Giao di&#7879;n ch&#237;nh c&#7911;a app."
   },
   {
     src: screenshot02Image,
     alt: "Huong dan su dung thuc te cua Instant Translate",
-    caption: "Cach su dung thuc te cua app."
+    caption: "C&#225;ch s&#7917; d&#7909;ng th&#7921;c t&#7871; c&#7911;a app."
   },
   {
     src: trayChangeLanguageImage,
     alt: "Menu tray de doi ngon ngu dich nhanh",
-    caption: "Doi ngon ngu dich ngay tu system tray."
+    caption: "&#272;&#7893;i ng&#244;n ng&#7919; d&#7883;ch ngay t&#7915; system tray."
   },
   {
     src: textTyperImage,
     alt: "Tinh nang text typer trong Instant Translate",
-    caption: "Tinh nang text typer cho thao tac nhap nhanh."
+    caption: "T&#237;nh n&#259;ng text typer cho thao t&#225;c nh&#7853;p nhanh."
   },
   {
     src: lowRamUsageImage,
     alt: "Thong ke muc su dung RAM thap cua Instant Translate",
-    caption: "App chay nen nhe, RAM su dung thap."
+    caption: "App ch&#7841;y n&#7873;n nh&#7865;, RAM s&#7917; d&#7909;ng th&#7845;p."
   }
 ];
 
