@@ -5,6 +5,8 @@ import screenshot02Image from "./assets/screenshot-02.jpg";
 import textTyperImage from "./assets/text-typer.jpg";
 import trayChangeLanguageImage from "./assets/tray-change-language.jpg";
 
+const APP_VERSION_METADATA_URL = "/app-version.json";
+
 const screenshotItems = [
   {
     src: screenshot01Image,
@@ -119,3 +121,32 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => revealObserver.observe(item));
+
+async function hydrateLatestVersionTag() {
+  const versionTags = Array.from(document.querySelectorAll("[data-latest-version-tag]"));
+  if (versionTags.length === 0) {
+    return;
+  }
+
+  try {
+    const response = await fetch(APP_VERSION_METADATA_URL, { cache: "no-store" });
+    if (!response.ok) {
+      return;
+    }
+
+    const payload = await response.json();
+    const latestVersion = String(payload?.latestVersion ?? "").trim();
+    if (!latestVersion) {
+      return;
+    }
+
+    versionTags.forEach((tag) => {
+      tag.textContent = `v${latestVersion}`;
+      tag.style.display = "inline-flex";
+    });
+  } catch {
+    // Keep default download labels when metadata is unavailable.
+  }
+}
+
+hydrateLatestVersionTag();
